@@ -2,16 +2,30 @@
 <html>
     <head>
         <title> Hava Sıcaklığı Çevirici </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
 
     </head>
     <body>
-        
-    
-
-
-
-        <a href="C:\Users\beril\OneDrive\Masaüstü\javascript_test_projeleri\java_çalışma\anasayfa\index.html"> Anasayfa </a>
-        <script src="script.js"></script>
+        <div class="kutu">
+            <h2 class="baslık"> Hava Sıcaklığı Çevirici </h2>
+            <div class="değerler">
+                <div class="satır">
+                    <label> Celsius : </label>
+                    <input onchange="calculateTemp(event)" type="number" class="tempInput" name="celsius" id="celsius" placeholder="Hava kaç derece ?">
+                </div>
+                <div class="satır">
+                    <label> Fahrenheit : </label>
+                    <input onchange="calculateTemp(event)" type="number" class="tempInput" name="fahrenheit" id="fahrenheit" placeholder="Hava kaç derece ?">
+                </div>
+                <div class="satır">
+                    <label> Kelvin : </label>  
+                    <input onchange="calculateTemp(event)" type="number" class="tempInput" name="kelvin" id="kelvin" placeholder="Hava kaç derece ?">
+                </div>
+            </div>    
+        </div>
+        <div class="anasayfa">
+            <a href="C:\Users\beril\OneDrive\Masaüstü\javascript_test_projeleri\java_çalışma\anasayfa\index.html"> Anasayfa </a>
+        </div>
+        <script src="script2.js"></script>
     </body>
 </html>
