@@ -4,7 +4,19 @@ const number = document.getElementById('number');
 const equal = document.getElementById('equal');
 const exchangeRate = document.getElementById('exchangeRate');
 
+const bars = document.querySelector('.fa-bars');
+const sidebar = document.querySelector('.sidebar');
+const close = document.querySelector('.fa-xmark');
+
 updateRate();           // sayfa yüklendiğinde otomatik olarak gösterir.
+
+bars.addEventListener('click',()=>{
+    sidebar.classList.toggle('showSidebar');
+});
+
+close.addEventListener('click',()=>{
+    sidebar.classList.remove('showSidebar');
+});
 
 function updateRate() {
     fetch(

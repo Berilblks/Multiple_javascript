@@ -2,6 +2,18 @@ const celsius = document.getElementById('celsius');
 const fahrenheit = document.getElementById('fahrenheit');
 const kelvin = document.getElementById('kelvin');
 
+const bars = document.querySelector('.fa-bars');
+const sidebar = document.querySelector('.sidebar');
+const close = document.querySelector('.fa-xmark');
+
+bars.addEventListener('click',()=>{
+    sidebar.classList.toggle('showSidebar');
+});
+
+close.addEventListener('click',()=>{
+    sidebar.classList.remove('showSidebar');
+});
+
 function calculateTemp(event){                             //Fonksiyon, event adlı parametre alır. Bu event, hangi input'a dokunulduğunu, ne yazıldığını yakalamaya yarar.
 
     const currentValue = Number(event.target.value);      // yazılan değeri sayıya çevirir.   

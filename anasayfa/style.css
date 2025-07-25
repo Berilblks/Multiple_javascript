@@ -13,7 +13,7 @@ body{
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: darkorange;
+    color: blue;
     cursor: pointer;
 }
 
@@ -37,12 +37,12 @@ body{
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: darkorange;
+    color: blue;
     cursor: pointer;
 }
 
 ul{
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 li{
@@ -60,7 +60,7 @@ a{
 }
 
 a:hover{
-    background-color: coral;
+    background-color: darkcyan;
     color: white;
     text-indent: 20px;
 }

@@ -1,8 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; 
+    background-color: lightslategrey;
+}
+
+.bar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+.sidebar{
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 30%;
     height: 100vh;
+    transform: translate(-100%); 
+    transition: 0.4s;   
+}
+
+.showSidebar{
+    transform: translate(0%);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+ul{
+    margin-top: 65px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    padding: 15px 25px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+a:hover{
+    background-color: darkcyan;
+    color: white;
+    text-indent: 20px;
 }
 
 .tab{
@@ -20,27 +84,31 @@ p{
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    background-color: darkcyan;
 }
 
 .baslık{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .baslık i{
     font-size: 25px;
-    color: chocolate;
+    color: blue;
 }
 
 .baslık h2{
-    color: chocolate;
+    color: blue;
+    font-size: 25px;
     font-weight: bolder;
     letter-spacing: 2px;
 }
 
 .active{
     display: none;
+    transition: background-color 0.3s;
 }
 
 button{
@@ -49,7 +117,10 @@ button{
     cursor: pointer;
 }
 
+
 .iç{
+    margin-top: 10px;
+    color: white;
     display: block;
 }
 
@@ -57,27 +128,4 @@ button{
     display: none;
 }
 
-.anasayfa{    
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
 
-.anasayfa a{
-    text-decoration: none;
-    color: chocolate;
-    font-weight: bold;
-    font-size: 30px;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-}
-
-.anasayfa a:hover{
-    background-color: chocolate;
-    color: aliceblue;
-}
