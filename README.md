@@ -10,7 +10,7 @@ Anasayfamız olan sayfada bir sidebar bulunuyor bu sidebar icona tıklanıldığ
 
 ikinci sayfa olan accordion projesine tıklandığında sayfa açılıyor.
   bu sayfada bu projenin kısa bir tanıtımı, hakkımda, iletişim şeklinde 3 bölümden oluşan bir accordion bulunuyor.
-  + iconuna tıklandığında iç kısım açılıyor ve icon - ye dönüyor. - ye tıklandığındada kapanıyor.
+   + iconuna tıklandığında iç kısım açılıyor ve icon - ye dönüyor. - ye tıklandığındada kapanıyor.
   iletişim kısmınada linkedin ve github hesapları için tıklandığında bireysel hesaplarıma geçiş yapılıyor.
 
 üçüncü sayfa olan hava sıcaklığı çeviricisine tıklandığında sayfa açılıyor.
